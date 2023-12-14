@@ -99,33 +99,35 @@ const NovaReceita = () => {
             onChange={(e) => setCategoria(e.target.value)}
           >
             <option value="" disabled hidden>Categoria</option>
-            {['Refeição', 'Doce/Sobremesa', 'Bebida', 'Salgados', 'Lanches'].map((opcao, index) => (
+            {['Refeição', 'Doce/Sobremesa', 'Bebida', 'Salgado', 'Lanche'].map((opcao, index) => (
               <option key={index} value={opcao}>{opcao}</option>
             ))}
           </select>
             <div className="box-time">
               <label htmlFor="horas-minutos">Tempo de Preparo: </label>
-              <input
-                type="number"
-                name="horas"
-                id="horas"
-                max="24"
-                min="0"
-                placeholder="Horas"
-                value={horas}
-                onChange={(e) => setHoras(e.target.value)}
-              />
-              <h1>:</h1>
-              <input
-                type="number"
-                name="minutos"
-                id="minutos"
-                max="60"
-                min="0"
-                placeholder="Minutos"
-                value={minutos}
-                onChange={(e) => setMinutos(e.target.value)}
-              />
+              <div className="box-infos-time">
+                <input
+                  type="number"
+                  name="horas"
+                  id="horas"
+                  max="24"
+                  min="0"
+                  placeholder="Horas"
+                  value={horas}
+                  onChange={(e) => setHoras(e.target.value)}
+                />
+                <h1>:</h1>
+                <input
+                  type="number"
+                  name="minutos"
+                  id="minutos"
+                  max="60"
+                  min="0"
+                  placeholder="Minutos"
+                  value={minutos}
+                  onChange={(e) => setMinutos(e.target.value)}
+                />
+                </div>
             </div>
           </div>
 
