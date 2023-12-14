@@ -131,6 +131,7 @@ const EditarReceita = () => {
           </select>
             <div className="box-time">
               <label htmlFor="horas-minutos">Tempo de Preparo: </label>
+              <div className="box-infos-time">
                 <input
                     type="number"
                     name="horas"
@@ -142,17 +143,18 @@ const EditarReceita = () => {
                     onChange={(e) => setHoras(e.target.value)}
                 />
 
-              <h1>:</h1>
-              <input
-                type="number"
-                name="minutos"
-                id="minutos"
-                max="60"
-                min="0"
-                placeholder="Minutos"
-                value={minutos || 0}
-                onChange={(e) => setMinutos(e.target.value)}
-              />
+                <h1>:</h1>
+                <input
+                  type="number"
+                  name="minutos"
+                  id="minutos"
+                  max="60"
+                  min="0"
+                  placeholder="Minutos"
+                  value={minutos || 0}
+                  onChange={(e) => setMinutos(e.target.value)}
+                />
+              </div>
             </div>
           </div>
 
