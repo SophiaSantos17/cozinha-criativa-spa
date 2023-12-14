@@ -1,0 +1,203 @@
+
+
+.container-add{
+    width: 100%;
+    height: auto;
+}
+.container-add .title-add{
+    width: 96%;
+    border-bottom: solid 3px var(--laranja-principal);
+    padding: 20px;
+}
+.container-add .box-button{
+    display: flex;
+    width: 100%;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+.container-add .box-button .btn-salvar{
+    width: 200px;
+    padding: 10px 0;
+    color: var(--laranja-botoes);
+    font-weight: 600;
+    font-size: 15px;
+    border-radius: 5px;
+    border: 1px solid var(--laranja-botoes);
+    background-color: var(--branco);
+    box-shadow: 1px 2px 4px rgb(125, 125, 125);
+    margin: 20px 50px;
+    transition: background 0.5s ease-in-out;
+    cursor: pointer;
+}
+.container-add .box-button .btn-salvar:hover{
+    color: var(--branco);
+    border: 1px solid var(--laranja-botoes);
+    background-color: var(--laranja-botoes);
+}
+.top-size{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    margin-bottom: 50px;
+}
+.top-size .img-size .input-file{
+    width: 90%;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+}
+.container-add .title-top-size, .container-add .title-bottom-infos{
+    color: var(--laranja-principal);
+    font-weight: 700;
+    font-size: 30px;
+    padding: 30px 0 10px 30px;
+}
+.top-size .img-size{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    
+}
+.top-size .img-size img{
+    width: 90%;
+    
+}
+
+.top-size .img-size input[type="file"] {
+    /* display: none; */
+    cursor: pointer;
+} 
+
+
+.top-size .apresentacao-size{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+    justify-content: flex-start;
+}
+.top-size .apresentacao-size .input-title{
+    width: 80%;
+    padding: 20px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 1px 2px 4px rgb(194, 194, 194);
+    margin: 10px;
+}
+.top-size .apresentacao-size .text-apresentacao{
+    resize: none;
+    width: 80%;
+    padding: 20px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 1px 2px 4px rgb(194, 194, 194);
+    margin: 10px;
+    font-family: "Inter";
+}
+
+.bottom-size{
+    width: 98%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0 0 20px;
+}
+
+.bottom-size .box-infos-receita{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    height: 100px;
+    align-items: center;
+}
+
+.bottom-size .box-infos-receita .select-opt{
+    width: 36%;
+    padding: 20px;
+    height: 60px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 1px 2px 4px rgb(194, 194, 194);
+    margin: 10px 0;
+    font-family: "Inter";
+}
+
+.bottom-size .box-infos-receita .box-time{
+    display: flex;
+    flex-direction: row;
+    width: 55%;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.bottom-size .box-infos-receita .box-time label{
+    font-size: 16px;
+    font-family: "Inter";
+    text-align: right;
+}
+
+.bottom-size .box-infos-receita .box-time input{
+    width: 20%;
+    height: 10px;
+    padding: 27px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 1px 2px 4px rgb(194, 194, 194);
+    margin: 10px;
+    font-family: "Inter";
+}
+
+.bottom-size textarea{
+    resize: none;
+    width: 90%;
+    padding: 20px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 1px 2px 4px rgb(194, 194, 194);
+    margin: 10px 0;
+    font-family: "Inter";
+    height: 100px;
+
+}
+
+
+@media (max-width: 880px){
+    .container-add .title-add{
+        width: 90%;
+    }
+    .top-size{
+        flex-direction: column;
+        align-items: center;
+        width: 96%;
+    }
+    .bottom-size{
+        width: 90%;
+    }
+    .top-size .apresentacao-size .input-title{
+        width: 90%;
+    }
+    .top-size .apresentacao-size .text-apresentacao{
+        width: 90%;
+    }
+    .bottom-size .box-infos-receita{
+        height: auto;
+    }
+    
+}
+@media (max-width: 770px){
+    .bottom-size .box-infos-receita{
+        flex-direction: column;
+        height: auto;
+        width: 96%;
+    }
+
+    .bottom-size .box-infos-receita .select-opt{
+        width: 90%;
+    }
+
+    
+
+    
+}

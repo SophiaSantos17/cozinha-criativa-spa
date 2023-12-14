@@ -1,0 +1,136 @@
+
+
+.box-total-card-home{
+    text-decoration: none;
+    width: 30%;
+    background-color: var(--branco);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--preto);
+    padding: 10px 0;
+    margin: 10px;
+    transition: background-color 0.3s;
+    box-shadow: 1px 1px 3px rgb(128, 128, 128);
+}
+.box-total-card-home:hover, .box-bottom-size .top-size-profile:hover{
+    background-color: var(--laranja-principal);
+    color: var(--branco);
+}
+.box-total-card-home .box-top-size{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box-total-card-home .box-top-size img{
+    width: 90%;
+}
+
+.box-total-card-home .box-bottom-size {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.box-total-card-home .box-bottom-size .top-size-profile{
+    display: flex;
+    flex-direction: row;
+    justify-content: baseline;
+    align-items: center;
+    width: 90%;
+    padding: 10px 0;
+    border-bottom: var(--laranja-principal) solid 2px;
+}
+
+
+.box-total-card-home .box-bottom-size .top-size-profile img{
+    width: 30px;
+    width: 30px;
+    padding: 0 5px;
+}
+.box-total-card-home .box-bottom-size .top-size-profile p{
+    font-size: 1.0em;
+
+}
+.box-total-card-home .box-bottom-size .box-text-receita{
+    justify-content: flex-start;
+    width: 90%;
+}
+
+
+.box-total-card-home .box-bottom-size .top-size-profile:hover {
+    border-bottom-color: var(--branco);
+}
+
+
+.box-total-card-home .box-bottom-size .box-text-receita h3, p{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+@media(max-width: 750px){
+
+    .box-total-card-home .box-bottom-size .top-size-profile p{
+        font-size: 70%;
+    }
+    .box-total-card-home .box-bottom-size .top-size-profile img{
+        width: 20%;
+    }
+}
+
+@media(max-width: 660px){
+
+    .box-total-card-home{
+        width: 48%;
+        margin: 10px 0;
+    }
+
+}
+
+@media(max-width: 670px){
+
+    .box-total-card-home .box-bottom-size .top-size-profile p{
+        font-size: 85%;
+    }
+
+}
+
+@media(max-width: 470px){
+
+    .box-total-card-home .box-bottom-size .box-text-receita{
+        align-items: center;
+        font-size: 80%;
+    }
+
+}
+
+@media(max-width: 400px){
+    .box-total-card-home{
+        width: 90%;
+        margin: 10px;
+    }
+
+    .box-total-card-home .box-bottom-size .top-size-profile {
+        justify-content: flex-start;
+    }
+    .box-total-card-home .box-bottom-size .top-size-profile p{
+        font-size: 100%;
+    }
+    .box-total-card-home .box-bottom-size .top-size-profile img{
+        width: 15%;
+    }
+    .box-total-card-home .box-bottom-size .box-text-receita{
+        align-items: right;
+    }
+
+}
+
+
+
+
+

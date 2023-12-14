@@ -1,0 +1,148 @@
+.container-home{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    /* overflow: hidden; */
+    flex-wrap: wrap;
+}
+
+.div-total-banner button{
+    background-color: var(--laranja-botoes);
+    color: #fff;
+    font-weight: 600;
+    width: 35%;
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 3px #878787;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.div-total-banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 96%;
+    box-sizing: border-box;
+    margin-bottom: 20px; 
+}
+
+.div-text {
+    width: 50%;
+    box-sizing: border-box;
+    padding: 120px;
+    font-size: 25px;
+}
+
+.div-img {
+    width: 50%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.div-img img{
+    padding-right: 100px;
+    max-width: 100%; /* Adicionado para garantir que a imagem não ultrapasse a largura da div */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+.sub-title{
+    width: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.text-conteudo{
+    width: 100%;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    border-bottom: 3px solid;
+    border-color: var(--laranja-botoes); 
+}
+
+.container-cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 100px;
+    padding-top: 30px;
+}
+
+@media(max-width: 1240px){
+    .div-text button{
+        width: 70%;
+    }
+}
+
+@media(max-width: 920px){
+
+    .div-img img{
+        width: 95%;
+    }
+
+    .div-total-banner .div-text h1{
+        font-size: 1.3em;
+    }
+
+    .div-total-banner .div-text p{
+        font-size: 0.9em;
+    }
+
+    .div-text button{
+        width: 100%;
+    }
+
+    
+}
+
+
+@media(max-width: 850px){
+
+    .div-img img{
+        width: 90%;
+    }
+    
+}
+
+@media(max-width: 720px){
+
+    .div-img img{
+        display: none;
+    }
+
+    .div-text{
+        width: 100%;
+    }
+    
+}
+
+@media(max-width: 365px){
+
+    .div-text{
+        padding: 60px;
+    }
+}
+
+@media(max-width: 300px){
+
+    .div-text{
+        padding: 30px;
+        font-size: 1.5em;
+    }
+}
+
+@media(max-width: 260px){
+
+    .div-text{
+        padding: 30px;
+        font-size: 1.2em;
+    }
+
+    .div-text button{
+        display: none;
+    }
+}

@@ -1,0 +1,242 @@
+.container-perfil{
+    display: flex;
+    flex-direction: column;
+}
+
+.box-profile{
+    display: flex;
+    flex-direction: row;
+
+}
+
+.size-profile{
+    width: 50%;
+    background-color: var(--branco);
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+}
+
+
+.size-profile .top-size-profile{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+}
+
+.size-profile .top-size-profile .size-img {
+    width: 25%;
+}
+.size-profile .top-size-profile .size-img img{
+    width: 100%;
+}
+
+.size-profile .top-size-profile .size-infos-perfil{
+    padding: 20px;
+    display: flex;
+    width: 75%;
+    flex-direction: column;
+}
+
+.size-profile .top-size-profile .size-infos-perfil h2{
+    font-size: 35px;
+    font-weight: 900;
+}
+.size-profile .top-size-profile .size-infos-perfil h4{
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.size-infos-posts{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    height: 50px;
+    width: 70%;
+    justify-content: right;
+    
+}
+.infos-posts{
+    text-align: center;
+    margin: 0 10px;
+    width: 30px;
+    height: auto;
+}
+.size-infos-posts h3{
+    font-weight: 900;
+    font-size: 25px;
+    margin-bottom: -3px;
+}
+.size-infos-posts p{
+    font-weight: 500;
+    font-size: 10px;
+    margin: 0;
+}
+
+.bottom-size-profile{
+    padding: 30px 0;
+    width: 100%;
+}
+.bottom-size-profile h5{
+    color: gray;
+    font-weight: 400;
+}
+
+.bottom-size-profile p{
+    width: 100%;
+}
+
+.buttons-size{
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: flex-end;
+    width: 100%;
+    height: 60px;
+}
+
+.buttons-size .btn-criar-post{
+    background-color: var(--laranja-botoes);
+    color: var(--branco);
+    border: var(--laranja-botoes) 1px solid;
+    font-weight: 600;
+    padding: 9px 0;
+    width: 190px;
+    border-radius: 5px;
+    margin: 0 10px;
+    box-shadow: 1px 1px 3px rgb(128, 128, 128);
+    transition: background-color 0.5s ease;
+    text-align: center;
+    text-decoration: none;
+}
+.buttons-size .btn-gerenciar-perfil{
+    color: var(--laranja-botoes);
+    background-color: var(--branco);
+    font-weight: 600;
+    border: var(--laranja-botoes) solid 1px;
+    padding: 9px 0;
+    width: 190px;
+    border-radius: 5px;
+    margin: 0 10px;
+    box-shadow: 1px 1px 3px rgb(128, 128, 128);
+    transition: background-color 0.5s ease;
+    text-align: center;
+    text-decoration: none;
+}
+
+.buttons-size .btn-gerenciar-perfil:hover{
+    background-color: var(--laranja-botoes);
+    color: var(--branco);
+    border: var(--laranja-botoes) 1px solid;
+}
+
+.buttons-size .btn-criar-post:hover{
+    color: var(--laranja-botoes);
+    background-color: var(--branco);
+    border: var(--laranja-botoes) solid 1px;
+}
+
+
+.size-receitas{
+    background-color: var(--preto);
+    width: 50%;
+    color: var(--branco);
+    height: 100vh;
+    overflow: hidden;
+
+}
+.size-receitas h2{
+    width: 100%;
+    background-color: transparent;
+    color: var(--branco);
+    border: none;
+    padding: 20px 0;
+    font-size: 25px;
+    font-weight: 500;
+    border-bottom: var(--preto) solid 3px;
+    border-bottom: var(--laranja-botoes) solid 3px;
+    text-align: center;
+}
+
+
+.size-receitas .box-receitas{
+    width: 100%;
+    height: 80vh;
+    max-height: 90vh;
+    overflow-y: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    scrollbar-width: thin;
+    scrollbar-color: var(--laranja-botoes) var(--branco);
+}
+
+.size-receitas .box-receitas::-webkit-scrollbar {
+    width: 10px;
+}
+
+.size-receitas .box-receitas::-webkit-scrollbar-thumb {
+    background-color: var(--laranja-botoes);
+}
+
+.size-receitas .box-receitas::-webkit-scrollbar-track {
+    background-color: black;
+}
+
+
+@media (max-width: 880px){
+    
+    .size-receitas .box-receitas{
+        overflow-y: auto;
+        display: flex;
+    }
+
+}
+
+@media (max-width: 650px){
+    .box-profile{
+        display: flex;
+        flex-direction: column;
+    }
+    .size-profile, .size-receitas{
+        width: 100%;
+    }
+    .size-receitas .box-receitas{
+        overflow-y: auto;
+        display: flex;
+    }
+    .size-profile .bottom-size-profile{
+        width: 90%;
+        padding: 30px;
+    }
+    .size-profile{
+        padding: 0;
+    }
+    .buttons-size{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+}
+
+@media (max-width: 480px){
+    
+    .top-size-profile{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    .size-img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .size-profile .top-size-profile .size-infos-perfil{
+        width: 80%;
+    }
+
+}

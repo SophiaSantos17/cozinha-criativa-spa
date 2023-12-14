@@ -1,0 +1,166 @@
+/* ------------------------HEADER ------------------------*/
+header{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    height: 15vh;
+    padding: 10px 0;
+    border-bottom: var(--laranja-principal) solid 2px;
+    box-shadow: 2px 1px 4px grey;
+
+}
+
+
+/* ------------------------ LOGO ------------------------ */
+header .box-logo{
+    width: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header .box-logo img{
+    width: 150px;
+    /* height: 100%; */
+}
+
+
+/* ------------------------ OPÇÕES ------------------------ */
+header .box-opts{
+    width: 85%;
+    display: flex;
+    flex-direction: row;
+}
+
+/* ------------------------ Icones ------------------------ */
+header .box-opts .box-icons{
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+header .box-opts .box-icons .btn-salvar, header .box-opts .box-icons .btn-perfil{
+    width: 50px;
+    height: 50px;
+    margin: 0 20px;
+    background-color: transparent;
+    border: none;
+    
+}
+header .box-opts .box-icons .btn-salvar p, header .box-opts .box-icons .btn-perfil p{
+    display: none;
+}
+
+header .box-opts .box-icons .btn-salvar img, header .box-opts .box-icons .btn-perfil img{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+/* ------------------- RESPONSIVIDADE ------------------- */ 
+
+header .box-btn-responsivo{
+    display: none;
+}
+header .box-btn-responsivo .btn-close-menu,
+header .box-btn-responsivo .btn-open-menu {
+    display: none;
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    border: none;
+}
+
+header .box-btn-responsivo .btn-open-menu img{
+    width: 100%;
+    height: 100%;
+}
+
+header .box-btn-responsivo.active .btn-close-menu {
+    display: inline-block;
+}
+
+header .box-btn-responsivo.active .btn-open-menu {
+    display: none;
+}
+
+@media (max-width: 640px) {
+    header{
+        padding: 10px 45px ;
+    }
+    header .box-opts {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        justify-content: flex-start;
+        top: 18vh;
+        width: 50%;
+        height: auto;
+        right: 0;
+        z-index: 2;
+        padding: 10px 20px;
+        background-color: var(--laranja-principal);
+    }
+    header .box-btn-responsivo{
+        width: 80%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    header .box-opts .box-icons .btn-salvar, header .box-opts .box-icons .btn-perfil{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 30px;
+        height: auto;
+        margin: 10px 0;
+    }
+    header .box-opts .box-icons .btn-salvar:hover, header .box-opts .box-icons .btn-perfil:hover{
+        opacity: 0.6;
+    }
+    header .box-opts .box-icons .btn-salvar p, header .box-opts .box-icons .btn-perfil p{
+        margin: 0 10px;
+        display: flex;
+        font-size: 20px;
+        font-weight: 900;
+    }
+
+    header .box-opts .box-icons{
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    header .box-opts.active {
+        display: flex;
+        animation: slideInRight 0.5s ease;
+    }
+
+    header .box-btn-responsivo.active .btn-close-menu {
+        display: flex;
+    }
+
+    header .box-btn-responsivo:not(.active) .btn-open-menu {
+        display: flex;
+    }
+
+    header .box-btn-responsivo btn-open-menu, header .box-btn-responsivo btn-close-menu{
+        width: 50px;
+        height: 50px;
+        background-color: transparent;
+        border: none;
+    
+    }
+    
+}
+
+/* ------------------------ ANIMAÇÃO PARA O SUBMENU ------------------------ */
+@keyframes slideInRight {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}

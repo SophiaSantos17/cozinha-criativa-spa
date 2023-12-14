@@ -1,0 +1,102 @@
+
+
+.container-config-profile{
+   width: 100%;
+   height: 100%;
+   display: flex;
+   flex-direction: column;
+   /* height: 30vh; */
+   /* background-color: aqua; */
+}
+
+.conteudo{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    /* background-color: blue; */
+
+}
+nav {
+    min-height: 150vh;
+    background-color: var(--laranja-principal);
+    /* background-color: aqua; */
+    width: 15%;
+    color: var(--branco);
+    margin: 0;
+    padding: 10px;
+    z-index: 2;
+    align-items: center;
+
+}
+
+nav .btn-menu{
+    background-color: transparent;
+    border-bottom: solid 3px var(--laranja-principal);
+    color: white;
+    display: flex;
+    width: 90%;
+    flex-direction: row;
+    align-items: center;
+    padding: 15px 0;
+    text-align: left;
+    font-size: 17px;
+    border: none
+}
+
+nav .btn-menu img{
+    width: 30px;
+    padding: 0 10px;
+}
+
+nav .btn-menu:hover{
+    border-bottom: var(--branco) solid 3px;
+    /* opacity: 0.6; */
+    /* width: 200px; */
+}
+
+.box-conteudo{
+    width: 100%;
+}
+
+
+.box-adicionar-receita{
+    width: 100%;
+}
+
+.box-configurar-receitas-gerenciar{
+    width: 100%;
+    height: 150vh;
+    overflow: hidden;
+}
+.box-configurar-receitas .title-gerenciar{
+    width: 96%;
+    border-bottom: solid 3px var(--laranja-principal);
+    padding: 20px;
+}
+.box-configurar-receitas .total-receitas-title{
+    color: var(--laranja-principal);
+    font-size: 27px;
+    font-weight: 800;
+    padding: 20px;
+}
+.box-configurar-receitas .box-cards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media(max-width: 900px){
+    .conteudo{
+        flex-direction: column;
+    }
+    .menu{
+        width: auto;
+        display: flex;
+        flex-direction: row;
+        min-height: 10vh;
+    }
+    .menu .btn-menu{
+        width: 30%;
+    }
+}
