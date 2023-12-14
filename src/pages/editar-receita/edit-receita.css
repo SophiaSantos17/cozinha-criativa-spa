@@ -162,6 +162,30 @@
 
 }
 
+.input-ingrediente{
+    width: 80%;
+    padding: 20px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 1px 2px 4px rgb(194, 194, 194);
+    margin: 10px;
+}
+
+.btn-add-ingrediente, .btn-add-passo{
+    width: 200px;
+    padding: 10px 0;
+    color: var(--laranja-botoes);
+    font-weight: 600;
+    font-size: 15px;
+    border-radius: 5px;
+    border: 1px solid var(--laranja-botoes);
+    background-color: var(--branco);
+    box-shadow: 1px 2px 4px rgb(125, 125, 125);
+    margin: 20px 10px;
+    transition: background 0.5s ease-in-out;
+    cursor: pointer;
+}
+
 
 @media (max-width: 880px){
     .container-add .title-add{
@@ -184,6 +208,8 @@
     .bottom-size .box-infos-receita{
         height: auto;
     }
+
+    
     
 }
 @media (max-width: 770px){
