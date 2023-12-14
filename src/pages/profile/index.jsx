@@ -51,7 +51,7 @@ const Perfil = () => {
                     </div>
                     <div className="buttons-size">
                         <Link className="btn-criar-post" to="/nova-receita">Criar Postagem</Link>
-                        <Link className="btn-gerenciar-perfil" to="/gerenciar-perfil">Gerenciar Perfil</Link>
+                        <Link className="btn-gerenciar-perfil" to="/gerenciar-perfil">Gerenciar Receitas</Link>
                     </div>
                     
                 </div>
