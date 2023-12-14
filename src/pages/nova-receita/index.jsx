@@ -99,7 +99,7 @@ const NovaReceita = () => {
             onChange={(e) => setCategoria(e.target.value)}
           >
             <option value="" disabled hidden>Categoria</option>
-            {['Refeição', 'Doce/Sobremesa', 'Bebida', 'Salgado', 'Lanche'].map((opcao, index) => (
+            {['Refeição', 'Doce/Sobremesa', 'Bebida', 'Salgados', 'Lanches'].map((opcao, index) => (
               <option key={index} value={opcao}>{opcao}</option>
             ))}
           </select>
