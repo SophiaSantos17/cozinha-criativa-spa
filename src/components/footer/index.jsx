@@ -6,7 +6,7 @@ const Footer = () => {
         <footer>
             <div className="box-size-top">
                 <h2>Cozinha Criativa</h2>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s;</p>
+                <p>Um site para você adicionar sua receita, e descobrir receitas novas</p>
             </div>
                 
             <div className="box-size-bottom">
