@@ -161,6 +161,7 @@ const EditarReceita = () => {
             {ingredientes.map((ingrediente, index) => (
               <div key={index}>
                 <input
+                  className='input-ingrediente'
                   type="text"
                   placeholder={`Ingrediente ${index + 1}`}
                   value={ingrediente}
@@ -168,7 +169,7 @@ const EditarReceita = () => {
                 />
               </div>
             ))}
-            <button type="button" onClick={handleAddIngrediente}>
+            <button type="button" onClick={handleAddIngrediente} className='btn-add-ingrediente'>
               Adicionar Ingrediente
             </button>
           </div>
@@ -186,7 +187,7 @@ const EditarReceita = () => {
                     ></textarea>
                     </div>
                 ))}
-                <button type="button" onClick={handleAddPasso}>
+                <button type="button" onClick={handleAddPasso} className='btn-add-passo'>
                     Adicionar Passo
                 </button>
 
